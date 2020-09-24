@@ -50,25 +50,25 @@ experimentDir=`pwd`
 cd ../../../../
 
 # Avoid accidentally overwriting existing trace files; confirm deletion first
-if [ -e link-performance-rssi.dat ]; then
-    echo "Remove existing file link-performance-rssi.dat from top-level directory?"
-    select yn in "Yes" "No"; do
-        case $yn in
-            Yes ) echo "Removing..."; rm -rf link-performance-rssi.dat; break;;
-            No ) echo "Exiting..."; exit;;
-        esac
-    done
-fi
+# if [ -e link-performance-rssi.dat ]; then
+#     echo "Remove existing file link-performance-rssi.dat from top-level directory?"
+#     select yn in "Yes" "No"; do
+#         case $yn in
+#             Yes ) echo "Removing..."; rm -rf link-performance-rssi.dat; break;;
+#             No ) echo "Exiting..."; exit;;
+#         esac
+#     done
+# fi
 
-if [ -e link-performance-summary.dat ]; then
-    echo "Removing existing file link-performance-summary.dat from top-level directory?"
-    select yn in "Yes" "No"; do
-        case $yn in
-            Yes ) echo "Removing..."; rm -rf link-performance-summary.dat; break;;
-            No ) echo "Exiting..."; exit;;
-        esac
-    done
-fi
+# if [ -e link-performance-summary.dat ]; then
+#     echo "Removing existing file link-performance-summary.dat from top-level directory?"
+#     select yn in "Yes" "No"; do
+#         case $yn in
+#             Yes ) echo "Removing..."; rm -rf link-performance-summary.dat; break;;
+#             No ) echo "Exiting..."; exit;;
+#         esac
+#     done
+# fi
 
 # Random number generator run number
 RngRun=1
